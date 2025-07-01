@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Start Troubleshooting</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 100px;">
+  <h1>Gas Lift Advisor Portal</h1>
+  <p>Click the button below to begin troubleshooting your well.</p>
+  <button onclick="redirectToGPT()" style="padding: 15px 30px; font-size: 16px;">Start</button>
+
+  <script>
+    function redirectToGPT() {
+      const gptLinks = [
+        "https://chatgpt.com/g/g-6863cf4b25a48191a7488c79fa15644d-gaslift-expert-ai",  // Replace with actual GPT links
+        "https://chatgpt.com/g/g-6863d1b9c41c8191b55cc625bdcdc398-confident-butfalse",
+        "https://chatgpt.com/g/g-6863d2a108a0819197f6397ee0acca36-gl-conversational-helper"
+      ];
+      const randomIndex = Math.floor(Math.random() * gptLinks.length);
+      window.location.href = gptLinks[randomIndex];
+    }
+  </script>
+</body>
+</html>
